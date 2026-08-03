@@ -1,0 +1,295 @@
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #fdf3e7;
+    color: #111;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    background: #af0d0d;
+    text-align: center;
+    height: 110px;
+    padding: 30px;
+}
+
+header h1 {
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+header p {
+    color: white;
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+
+/* ================= NAVIGATION ================= */
+
+nav {
+    background: #e3084a;
+    height: 62px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 55px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+}
+
+nav a:hover {
+    color: #ffe7c4;
+}
+
+
+/* ================= PACKAGES ================= */
+
+.packages {
+    width: 85%;
+    max-width: 1490px;
+
+    margin: 25px auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+.package-card {
+    width: 685px;
+    height: 497px;
+
+    background: #51bfff;
+
+    border-radius: 12px;
+
+    padding: 24px 25px;
+
+    text-align: center;
+
+    box-shadow: 0 7px 18px rgba(158, 74, 74, 0.15);
+
+    transition: 0.3s;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+}
+
+.package-card h2 {
+    font-size: 31px;
+    margin-bottom: 38px;
+}
+
+.package-card img {
+    width: 100%;
+    height: 280px;
+
+    object-fit: fill;
+
+    display: block;
+
+    border-radius: 11px;
+}
+
+.package-card p {
+    margin-top: 22px;
+    font-size: 20px;
+}
+
+.package-card .price {
+    margin-top: 18px;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* ================= INFORMATION SECTION ================= */
+
+.info-section {
+    width: 97.8%;
+
+    margin: 25px auto 0;
+
+    background: #9df372;
+
+    padding: 25px;
+
+    min-height: 400px;
+}
+
+.info-section h3 {
+    font-size: 31px;
+    margin-bottom: 18px;
+}
+
+.info-section ul {
+    list-style: none;
+    margin-bottom: 28px;
+}
+
+.info-section li {
+    font-size: 20px;
+    margin: 14px 0;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #7a2b17;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+footer h4 {
+    font-size: 30px;
+}
+
+footer .tagline {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+footer .copyright {
+    font-size: 17px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1500px) {
+
+    .packages {
+        width: 90%;
+        justify-content: center;
+    }
+
+    .package-card {
+        width: 46%;
+    }
+
+}
+
+
+@media (max-width: 1000px) {
+
+    .packages {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .package-card {
+        width: 100%;
+        height: auto;
+    }
+
+    .package-card img {
+        width: 100%;
+        height: 280px;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    nav {
+        gap: 30px;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    .info-section {
+        width: 90%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        height: auto;
+        padding: 18px 10px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    nav {
+        height: auto;
+        padding: 15px;
+        gap: 25px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .packages {
+        margin-top: 20px;
+    }
+
+    .package-card {
+        padding: 20px;
+    }
+
+    .package-card h2 {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+    .package-card img {
+        height: 220px;
+    }
+
+    .package-card p {
+        font-size: 17px;
+    }
+
+    .package-card .price {
+        font-size: 18px;
+    }
+
+    .info-section {
+        width: 90%;
+        padding: 22px;
+    }
+
+    .info-section h3 {
+        font-size: 25px;
+    }
+
+}
+
+</style>
